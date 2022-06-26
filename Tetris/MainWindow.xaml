@@ -8,9 +8,16 @@
     xmlns:local="clr-namespace:Tetris"
     mc:Ignorable="d"
     Title="MainWindow"
-    Height="400"
-    Width="700"
+    Height="500"
+    Width="400"
     >
-    <Grid x:Name="MainGrid">
-    </Grid>
+    <Border
+        Margin="10"
+        BorderBrush="Black"
+        BorderThickness="2"
+        >
+        <Grid>
+
+        </Grid>
+    </Border>
 </Window>
