@@ -13,3 +13,9 @@ E:\Projects\Tetris\Tetris\obj\Debug\Tetris.csproj.GenerateResource.cache
 E:\Projects\Tetris\Tetris\obj\Debug\Tetris.csproj.CoreCompileInputs.cache
 E:\Projects\Tetris\Tetris\obj\Debug\Tetris.exe
 E:\Projects\Tetris\Tetris\obj\Debug\Tetris.pdb
+E:\Projects\Tetris\Tetris\bin\Debug\Microsoft.Expression.Interactions.dll
+E:\Projects\Tetris\Tetris\bin\Debug\System.Windows.Interactivity.dll
+E:\Projects\Tetris\Tetris\bin\Debug\Microsoft.Expression.Interactions.xml
+E:\Projects\Tetris\Tetris\bin\Debug\System.Windows.Interactivity.xml
+E:\Projects\Tetris\Tetris\obj\Debug\Tetris.csproj.CopyComplete
+E:\Projects\Tetris\Tetris\obj\Debug\GeneratedInternalTypeHelper.g.cs
