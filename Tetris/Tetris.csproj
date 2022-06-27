@@ -137,5 +137,8 @@
     <Resource Include="Assets\TileRed.png" />
     <Resource Include="Assets\TileYellow.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Icon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
