@@ -19,3 +19,7 @@ E:\Projects\Tetris\Tetris\bin\Debug\Microsoft.Expression.Interactions.xml
 E:\Projects\Tetris\Tetris\bin\Debug\System.Windows.Interactivity.xml
 E:\Projects\Tetris\Tetris\obj\Debug\Tetris.csproj.CopyComplete
 E:\Projects\Tetris\Tetris\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Projects\Tetris\Tetris\obj\Debug\Views\WaitingView.g.cs
+E:\Projects\Tetris\Tetris\obj\Debug\Views\WaitingView.baml
+E:\Projects\Tetris\Tetris\obj\Debug\Views\PlayingView.g.cs
+E:\Projects\Tetris\Tetris\obj\Debug\Views\PlayingView.baml

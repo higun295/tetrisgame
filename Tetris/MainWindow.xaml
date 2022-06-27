@@ -6,6 +6,8 @@
     xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:Tetris.ViewModel"
+    xmlns:view="clr-namespace:Tetris.Views"
     xmlns:local="clr-namespace:Tetris"
     xmlns:converter="clr-namespace:Tetris.Converter"
     mc:Ignorable="d"
@@ -14,10 +16,9 @@
     Width="500"
     WindowStartupLocation="CenterScreen"
     >
-
-    <Window.Resources>
-        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverer" />
-    </Window.Resources>
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
 
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="KeyDown">
@@ -25,16 +26,18 @@
         </i:EventTrigger>
     </i:Interaction.Triggers>
 
-    <Grid
-        Margin="10"
-        Visibility="{Binding IsGameStart, Converter={StaticResource BoolToVisibilityConverer}}"
-        Background="Gray"
-        >
-        <TextBlock
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Text="Press any key to start game"
-            FontSize="20"
-            />
+    <Window.Resources>
+        <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverer" />
+
+        <DataTemplate x:Key="WaitingTemplate" DataType="{x:Type vm:WaitingViewModel}">
+            <view:WaitingView />
+        </DataTemplate>
+        <DataTemplate x:Key="MainTemplate" DataType="{x:Type vm:MainViewModel}">
+            <view:PlayingView />
+        </DataTemplate>
+    </Window.Resources>
+
+    <Grid Margin="10">
+        <ContentControl Content="{Binding CurrentView}" />
     </Grid>
 </Window>

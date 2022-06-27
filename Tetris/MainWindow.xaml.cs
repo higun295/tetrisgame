@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Windows;
-using System.Windows.Input;
+﻿using System.Windows;
 
 namespace Tetris
 {
@@ -13,15 +10,6 @@ namespace Tetris
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        public static IEnumerable<Key> KeysDown()
-        {
-            foreach (Key key in Enum.GetValues(typeof(Key)))
-            {
-                if (Keyboard.IsKeyDown(key))
-                    yield return key;
-            }
         }
     }
 }

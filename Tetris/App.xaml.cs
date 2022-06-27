@@ -13,8 +13,6 @@ namespace Tetris
             base.OnStartup(e);
 
             MainWindow window = new MainWindow();
-            MainViewModel vm = new MainViewModel();
-            window.DataContext = vm;
             window.Show();
         }
     }
